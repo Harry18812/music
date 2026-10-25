@@ -36,7 +36,7 @@ jobs:
 
     - name: Sync Capacitor Android
       working-directory: ./spotify-clone
-      run: npx cap sync android
+      run: npx --yes @capacitor/cli sync android
 
     - name: Grant execute permission for Gradle
       working-directory: ./spotify-clone
