@@ -34,6 +34,10 @@ jobs:
         distribution: 'temurin'
         java-version: '17'
 
+    - name: Add Capacitor Android Platform
+      working-directory: ./spotify-clone
+      run: npx --yes @capacitor/cli add android --no-sync
+
     - name: Sync Capacitor Android
       working-directory: ./spotify-clone
       run: npx --yes @capacitor/cli sync android
